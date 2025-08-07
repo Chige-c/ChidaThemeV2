@@ -1,0 +1,65 @@
+:root {
+  --zombieFooterText: "Zombie v2.0.12";
+  --accent: 255, 255, 255;
+  --accent-off: 141, 141, 141;
+  --dark: 24, 24, 24;
+  --darkest: 12, 12, 12;
+  --dark-highlight: 48, 48, 48;
+  --dark-apparent: 43, 43, 43;
+  --white: 243, 242, 243;
+  --white-off: 207, 221, 233;
+  --jade-green: 0, 172, 111;
+  --honey-yellow: 255, 194, 85;
+  --cherry-red: 212, 51, 83;
+  --rounding: 17px;
+  --rounding-alt: 9px;
+  --rounding-large: 24px;
+  --rounding-circle: 100px;
+}
+/* 背景の色 */
+.backgroundContainer {
+  background-color: black !important;
+}
+/* 背景の色(url)(この場合なし) */
+.layout-mobile .backgroundContainer,
+.layout-desktop .backgroundContainer {
+  background: url()
+    no-repeat center center;
+}
+/* 背景の色(url)(アイテムの背景) */
+.backgroundContainer.withBackdrop {
+  background: url(https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/gradients/blue.png)
+    no-repeat center center;
+}
+/* 背景の色(アイテムの背景) */
+.backgroundContainer.withBackdrop {
+  background-color: rgba(var(--accent), 0.09) !important;
+}
+/* ヘッダーの背景 */
+.headerTabs {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: auto !important;
+}
+/* ヘッダーの編集(場所、大きさ) */
+.tabs-viewmenubar.emby-tabs.focusable.scrollX  {
+  margin-top: 0.4em !important;
+}
+.layout-desktop .headerTabs {
+  font-size: 115% !important;
+  margin-right: -0.5em !important;
+}
+/* 右のヘッダーの背景 */
+.headerRight {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+/* ヘッダー内のテキストの色 */
+.homeLibraryText,
+.emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
+  color: rgb(var(--darkest)) !important;
+}
+.homeLibraryText,
+.headerRight,
+.headerLeft,
+.emby-button-foreground {
+  color: rgb(var(--accent)) !important;
+}
