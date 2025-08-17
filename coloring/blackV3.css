@@ -1,0 +1,61 @@
+
+/* 背景の色 */
+.backgroundContainer {
+  background-color: black !important;
+}
+/* 背景の色(url)(この場合なし) */
+.layout-mobile .backgroundContainer,
+.layout-desktop .backgroundContainer {
+  background: url()
+    no-repeat center center;
+}
+/* 背景の色(url)(アイテムの背景) */
+.backgroundContainer.withBackdrop {
+  background: url(https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/gradients/blue.png)
+    no-repeat center center;
+}
+/* 背景の色(アイテムの背景) */
+.backgroundContainer.withBackdrop {
+  background-color: rgba(var(--accent), 0.07) !important;
+}
+/* ヘッダーの背景 */
+.headerTabs {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: auto !important;
+}
+/* ヘッダーの編集(場所、大きさ) */
+.tabs-viewmenubar.emby-tabs.focusable.scrollX  {
+  margin-top: 0.4em !important;
+}
+.layout-desktop .headerTabs {
+  font-size: 115% !important;
+  margin-right: -0.5em !important;
+}
+/* 右のヘッダーの背景 */
+.headerRight {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+/* ヘッダー内のテキストの色 */
+.homeLibraryText,
+.emby-tab-button.emby-button.emby-tab-button-active .emby-button-foreground {
+  color: rgb(var(--darkest)) !important;
+}
+.homeLibraryText,
+.headerRight,
+.headerLeft,
+.emby-button-foreground {
+  color: rgb(var(--accent)) !important;
+}
+.backdropImage {
+  filter: blur(4px) saturate(115%) contrast(115%) brightness(70%);
+  animation: 0.2s ease-in-out both backdrop-fadein;
+}
+.toast {
+  background-color: rgba(var(--dark), 1) !important;
+  color: rgba(var(--accent), 0.9) !important;
+  text-shadow: 0 0 4px #fff0 !important;
+  font-weight: 700;
+}
+.checkboxOutline {
+  border: 0.2em solid rgba(var(--accent),0.9) !important;
+}
