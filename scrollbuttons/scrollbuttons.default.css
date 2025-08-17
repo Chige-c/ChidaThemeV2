@@ -1,0 +1,120 @@
+/* 21:9 2560p x 1080p */
+@media only screen and (min-width: 2111px) and (max-width: 2561px) and (orientation: landscape) {
+    /* 前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+      position: absolute;
+      right: calc(96.3vw - 0em);
+      top: calc(15vh - 0em);
+    }
+    /* 次へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] {
+      position: absolute;
+      left: calc(3.6vw - 0em);
+      top: calc(15vh - 0em);
+    }
+    /* 次へ前への拡大 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] .material-icons.chevron_right:hover,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] .material-icons.chevron_left:hover {
+     transform:scale(1.7)!important;
+    }
+    /* 次へ前への拡大のモーション */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] .material-icons.chevron_right,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] .material-icons.chevron_left {
+      transition:.4s;
+    }
+    /* デフォルトで次へ前へを非表示 */
+    .sections.homeSectionsContainer .emby-scroller-container .emby-scrollbuttons-button.paper-icon-button-light {
+      display: none !important;
+    }
+    /* ホバー状態で次へ前へを表示 */
+    .sections.homeSectionsContainer .emby-scroller-container:hover .emby-scrollbuttons-button.paper-icon-button-light {
+      display: flex !important;
+    }
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"]:disabled,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"]:disabled {
+      display: none !important;
+    }
+    /* 次へが非表示のとき前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container:not(:has(button[data-direction="right"]:not(:disabled))) button[is="paper-icon-button-light"][data-direction="left"] {
+      right: calc(96.3vw - 0em);
+    }
+    /* 次へ前へのサイズの変更(大きく) */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"],
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"]  {
+      font-size: 125%;
+    }
+    /* ホバー状態の次へ前への背景の色 */
+    .sections.homeSectionsContainer .emby-scroller-container:hover .paper-icon-button-light {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+    /* 次へ前への背景の形 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"],
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+       border-radius: 100px;
+    }
+
+    /* 次へ前への元のボタンを小さくする */ 
+    .sections.homeSectionsContainer .emby-scroller-container .emby-scrollbuttons.padded-right {
+      height: 50px;
+    }
+}
+/* 16:9 1920p x 1080p */
+@media only screen and (min-width: 1850px) and (max-width: 2110px) and (orientation: landscape) {
+    /* 前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+      position: absolute;
+      right: calc(95.3vw - 0em);
+      top: calc(15vh - 0em);
+    }
+    /* 次へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] {
+      position: absolute;
+      left: calc(4vw - 0em);
+      top: calc(15vh - 0em);
+    }
+    /* 次へ前への拡大 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] .material-icons.chevron_right:hover,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] .material-icons.chevron_left:hover {
+     transform:scale(1.7)!important;
+    }
+    /* 次へ前への拡大のモーション */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] .material-icons.chevron_right,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] .material-icons.chevron_left {
+      transition:.4s;
+    }
+    /* デフォルトで次へ前へを非表示 */
+    .sections.homeSectionsContainer .emby-scroller-container .emby-scrollbuttons-button.paper-icon-button-light {
+      display: none !important;
+    }
+    /* ホバー状態で次へ前へを表示 */
+    .sections.homeSectionsContainer .emby-scroller-container:hover .emby-scrollbuttons-button.paper-icon-button-light {
+      display: flex !important;
+    }
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"]:disabled,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"]:disabled {
+      display: none !important;
+    }
+    /* 次へが非表示のとき前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container:not(:has(button[data-direction="right"]:not(:disabled))) button[is="paper-icon-button-light"][data-direction="left"] {
+      right: calc(95.3vw - 0em);
+    }
+    /* 次へ前へのサイズの変更(大きく) */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"],
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"]  {
+      font-size: 125%;
+    }
+    /* ホバー状態の次へ前への背景の色 */
+    .sections.homeSectionsContainer .emby-scroller-container:hover .paper-icon-button-light {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+    /* 次へ前への背景の形 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"],
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+       border-radius: 100px;
+    }
+
+    /* 次へ前への元のボタンを小さくする */ 
+    .sections.homeSectionsContainer .emby-scroller-container .emby-scrollbuttons.padded-right {
+      height: 50px;
+    }
+}
