@@ -1,0 +1,123 @@
+
+@media only screen and (min-width: 87.5em) and (orientation: landscape) {
+
+
+    /* 次へ前への拡大 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] .material-icons.chevron_right:hover,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] .material-icons.chevron_left:hover {
+     transform:scale(1.4)!important;
+    }
+    /* 次へ前への拡大のモーション */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] .material-icons.chevron_right,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] .material-icons.chevron_left {
+      transition:.4s;
+    }
+    /* デフォルトで次へ前へを非表示 */
+    .sections.homeSectionsContainer .emby-scroller-container .emby-scrollbuttons-button.paper-icon-button-light {
+      display: none !important;
+    }
+    
+    /* ホバー状態で次へ前へを表示 */
+    .sections.homeSectionsContainer .emby-scroller-container:hover .emby-scrollbuttons-button.paper-icon-button-light {
+      display: flex !important;
+    }
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"]:disabled,
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"]:disabled {
+      display: none !important;
+    }
+    /* 次へが非表示のとき前へのポジションの配置 */
+    
+    /* 次へ前へのサイズの変更(大きく) */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"],
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"]  {
+      font-size: 125%;
+    }
+    /* ホバー状態の次へ前への背景の色 */
+    .sections.homeSectionsContainer .emby-scroller-container:hover .paper-icon-button-light {
+      background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+    /* 次へ前への背景の形 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"],
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+       border-radius: 100px;
+    }
+}
+
+
+@media (min-width: 131.25em) {
+    /* 前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+      position: absolute;
+      right: calc(96.3vw - 0em);
+      top: calc(15vh + 0.2em);
+    }
+    /* 次へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] {
+      position: absolute;
+      left: calc(3.6vw - 0em);
+      top: calc(15vh + 0.2em);
+    }
+    .sections.homeSectionsContainer .emby-scroller-container:not(:has(button[data-direction="right"]:not(:disabled))) button[is="paper-icon-button-light"][data-direction="left"] {
+      right: calc(96.3vw - 0em);
+    }
+
+}
+
+
+@media (min-width: 120em) and (max-width: 131.24em){
+    /* 前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+      position: absolute;
+      right: calc(96.3vw - 0em);
+      top: calc(15vh - 0.3em);
+    }
+    /* 次へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] {
+      position: absolute;
+      left: calc(3.6vw + 1em);
+      top: calc(15vh - 0.3em);
+    }
+    .sections.homeSectionsContainer .emby-scroller-container:not(:has(button[data-direction="right"]:not(:disabled))) button[is="paper-icon-button-light"][data-direction="left"] {
+      right: calc(96.3vw - 0em);
+    }
+
+}
+
+
+@media (min-width: 100em) and (max-width: 119.99em) {
+    /* 前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+      position: absolute;
+      right: calc(95.5vw - 0em);
+      top: calc(15vh - 0.7em);
+    }
+    /* 次へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] {
+      position: absolute;
+      left: calc(3.6vw + 0em);
+      top: calc(15vh - 0.7em);
+    }
+    .sections.homeSectionsContainer .emby-scroller-container:not(:has(button[data-direction="right"]:not(:disabled))) button[is="paper-icon-button-light"][data-direction="left"] {
+      right: calc(95.5vw - 0em);
+    }
+
+}
+
+@media (min-width: 87.5em) and (max-width: 99.99em) {
+    /* 前へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="left"] {
+      position: absolute;
+      right: calc(95.3vw - 0em);
+      top: calc(15vh - 0.5em);
+    }
+    /* 次へのポジションの配置 */
+    .sections.homeSectionsContainer .emby-scroller-container button[is="paper-icon-button-light"][data-direction="right"] {
+      position: absolute;
+      left: calc(3.6vw + 0em);
+      top: calc(15vh - 0.5em);
+    }
+    .sections.homeSectionsContainer .emby-scroller-container:not(:has(button[data-direction="right"]:not(:disabled))) button[is="paper-icon-button-light"][data-direction="left"] {
+      right: calc(95.3vw - 0em);
+    }
+
+}
